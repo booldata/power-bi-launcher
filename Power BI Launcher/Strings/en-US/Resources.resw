@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+
+  <!-- XAML MainWindow -->
+  <data name="MainWindow.Title" xml:space="preserve"><value>Power BI Launcher</value></data>
+  <data name="NavPowerBi.Content" xml:space="preserve"><value>Power BI</value></data>
+  <data name="NavSettings.Content" xml:space="preserve"><value>Settings</value></data>
+  <data name="NavSettings.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve"><value>Settings (Ctrl+,)</value></data>
+  <data name="ShellBack.Content" xml:space="preserve"><value>← Back</value></data>
+  <data name="UpdateAvailable.Title" xml:space="preserve"><value>A newer launcher is available</value></data>
+  <data name="ViewRelease.Content" xml:space="preserve"><value>View release</value></data>
+  <data name="ProfilesPageTitle.Text" xml:space="preserve"><value>Power BI</value></data>
+  <data name="AddProfile.Text" xml:space="preserve"><value>Add profile</value></data>
+  <data name="AddProfileButton.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve"><value>Add profile (Ctrl+N)</value></data>
+  <data name="ReorderModeLabel.Text" xml:space="preserve"><value>Reorder mode</value></data>
+  <data name="ReorderModeBanner.[using:Microsoft.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve"><value>Reorder mode</value></data>
+  <data name="SettingsTitle.Text" xml:space="preserve"><value>Settings</value></data>
+  <data name="SetupVersions.Title" xml:space="preserve"><value>Scan to register Power BI Desktop.</value></data>
+  <data name="SetupVersions.Message" xml:space="preserve"><value>Scan, then pick, then confirm. Profiles cannot launch until a default version exists.</value></data>
+  <data name="RegisteredVersions.Text" xml:space="preserve"><value>Registered versions</value></data>
+  <data name="RegisteredVersionsHelp.Text" xml:space="preserve"><value>Scan this PC or browse to a Power BI executable. One default version is used when a profile has not picked one.</value></data>
+  <data name="Scan.Text" xml:space="preserve"><value>Scan</value></data>
+  <data name="Browse.Text" xml:space="preserve"><value>Browse…</value></data>
+  <data name="DefaultVersionBadge.Text" xml:space="preserve"><value>Default</value></data>
+  <data name="VersionRename.Text" xml:space="preserve"><value>Rename</value></data>
+  <data name="VersionRenameDone.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve"><value>Done (Enter)</value></data>
+  <data name="VersionRenameDone.[using:Microsoft.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve"><value>Confirm rename</value></data>
+  <data name="VersionMore.[using:Microsoft.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve"><value>More actions</value></data>
+  <data name="VersionSetDefault.Text" xml:space="preserve"><value>Set as default</value></data>
+  <data name="VersionRemove.Text" xml:space="preserve"><value>Remove</value></data>
+  <data name="NoVersions.Text" xml:space="preserve"><value>No versions registered.</value></data>
+  <data name="FolderToStoreProfiles.Text" xml:space="preserve"><value>Folder to store profiles</value></data>
+  <data name="FolderToStoreProfilesHelp.Text" xml:space="preserve"><value>Root folder where profile data is stored.</value></data>
+  <data name="ProfilesFolderRootChangeNote.Text" xml:space="preserve"><value>Changing this folder does not move existing profile folders.</value></data>
+  <data name="MinimizeBehavior.Text" xml:space="preserve"><value>Minimize behavior</value></data>
+  <data name="MinimizeBehaviorHelp.Text" xml:space="preserve"><value>What the minimize button does</value></data>
+  <data name="MinimizeToTaskbar.Content" xml:space="preserve"><value>Minimize to taskbar</value></data>
+  <data name="SendToTray.Content" xml:space="preserve"><value>Send to tray</value></data>
+  <data name="CloseBehavior.Text" xml:space="preserve"><value>Close behavior</value></data>
+  <data name="CloseBehaviorHelp.Text" xml:space="preserve"><value>What the close button does</value></data>
+  <data name="ExitApplication.Content" xml:space="preserve"><value>Exit application</value></data>
+  <data name="About.Text" xml:space="preserve"><value>About</value></data>
+  <data name="BuiltBy.Text" xml:space="preserve"><value>Built by</value></data>
+  <data name="License.Text" xml:space="preserve"><value>Licensed under the MIT License. © 2026 booldata</value></data>
+  <data name="SaveSettings.Content" xml:space="preserve"><value>Save settings</value></data>
+  <data name="Cancel.Content" xml:space="preserve"><value>Cancel</value></data>
+  <data name="ScanResults.Text" xml:space="preserve"><value>Scan results</value></data>
+  <data name="ScanResultsHelp.Text" xml:space="preserve"><value>Tick the versions to register. Untick a previously discovered version to remove it.</value></data>
+  <data name="ScanEmpty.Text" xml:space="preserve"><value>No Power BI executables were found. Browse to a Power BI executable instead.</value></data>
+  <data name="ScanStoreWarning.Title" xml:space="preserve"><value>The Microsoft Store version is not supported.</value></data>
+  <data name="ScanStoreWarning.Message" xml:space="preserve"><value>It signs every profile in to the same account, so profiles cannot use it. Install the downloaded version of Power BI Desktop, then scan again.</value></data>
+  <data name="ScanNotSupported.Text" xml:space="preserve"><value>Not supported</value></data>
+  <data name="Confirm.Content" xml:space="preserve"><value>Confirm</value></data>
+
+  <!-- XAML Edit Profile -->
+  <data name="EditProfileSection.Text" xml:space="preserve"><value>Edit profile</value></data>
+  <data name="UnsavedChanges.Text" xml:space="preserve"><value>Unsaved changes</value></data>
+  <data name="SaveChanges.Text" xml:space="preserve"><value>Save changes</value></data>
+  <data name="DiscardChanges.Content" xml:space="preserve"><value>Discard</value></data>
+  <data name="AvatarPreview.[using:Microsoft.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve"><value>Avatar preview</value></data>
+  <data name="ProfileNamePencil.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve"><value>Click to rename</value></data>
+  <data name="ProfileNamePencil.[using:Microsoft.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve"><value>Profile name</value></data>
+  <data name="ProfileNameBox.PlaceholderText" xml:space="preserve"><value>Profile name</value></data>
+  <data name="ProfileRename.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve"><value>Rename</value></data>
+  <data name="ProfileRename.[using:Microsoft.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve"><value>Rename</value></data>
+  <data name="ProfileRenameDone.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve"><value>Done (Enter)</value></data>
+  <data name="ProfileRenameDone.[using:Microsoft.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve"><value>Confirm rename</value></data>
+  <data name="ProfileRenameDiscard.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve"><value>Discard (Esc)</value></data>
+  <data name="ProfileRenameDiscard.[using:Microsoft.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve"><value>Discard rename</value></data>
+  <data name="UploadIcon.Text" xml:space="preserve"><value>Upload icon</value></data>
+  <data name="RemoveIcon.Text" xml:space="preserve"><value>Remove icon</value></data>
+  <data name="ShowOnTray.Text" xml:space="preserve"><value>Show profile in system tray</value></data>
+  <data name="ShowOnTrayHelp.Text" xml:space="preserve"><value>Quickly access this profile from the notification area.</value></data>
+  <data name="ShowOnTrayToggle.OnContent" xml:space="preserve"><value>On</value></data>
+  <data name="ShowOnTrayToggle.OffContent" xml:space="preserve"><value>Off</value></data>
+  <data name="ShowOnTrayToggle.[using:Microsoft.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve"><value>Show profile in system tray</value></data>
+  <data name="LaunchSection.Text" xml:space="preserve"><value>Launch</value></data>
+  <data name="EmptyVersion.Title" xml:space="preserve"><value>No versions registered.</value></data>
+  <data name="EmptyVersion.Message" xml:space="preserve"><value>This profile cannot launch until a default version exists in settings.</value></data>
+  <data name="OpenSettings.Content" xml:space="preserve"><value>Open settings</value></data>
+  <data name="DanglingVersion.Title" xml:space="preserve"><value>This profile’s version is gone.</value></data>
+  <data name="DanglingVersion.Message" xml:space="preserve"><value>It is no longer in the version registry. Pick another - launch will not fall back to the default version.</value></data>
+  <data name="VersionField.Text" xml:space="preserve"><value>Version</value></data>
+  <data name="VersionFieldHelp.Text" xml:space="preserve"><value>Power BI this profile launches.</value></data>
+  <data name="VersionCombo.[using:Microsoft.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve"><value>Version</value></data>
+  <data name="PasswordUnavailable.Title" xml:space="preserve"><value>Saved password unavailable</value></data>
+  <data name="PasswordUnavailable.Message" xml:space="preserve"><value>Saved password unavailable on this Windows account or device. Launch is blocked until you save the password again. The current Windows user is not used as a fallback.</value></data>
+  <data name="UseIdentity.Text" xml:space="preserve"><value>Use another Windows identity for network access</value></data>
+  <data name="AboutIdentity.[using:Microsoft.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve"><value>About Windows network identity</value></data>
+  <data name="AboutIdentity.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve"><value>Used when Power BI connects to Report Server or data sources that use Windows authentication. This does not sign you in to the Power BI service or replace your Entra ID/MFA sign-in.</value></data>
+  <data name="IdentityHelp.Text" xml:space="preserve"><value>Optional.</value></data>
+  <data name="IdentityToggle.OnContent" xml:space="preserve"><value>On</value></data>
+  <data name="IdentityToggle.OffContent" xml:space="preserve"><value>Off</value></data>
+  <data name="IdentityToggle.[using:Microsoft.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve"><value>Use another Windows identity for network access</value></data>
+  <data name="IdentityText.Header" xml:space="preserve"><value>Windows network identity</value></data>
+  <data name="IdentityText.PlaceholderText" xml:space="preserve"><value>DOMAIN\user or user@domain</value></data>
+  <data name="PasswordSaved.Text" xml:space="preserve"><value>Password saved</value></data>
+  <data name="PasswordSavedHelp.Text" xml:space="preserve"><value>Saved, not verified. Wrong or expired credentials show up when Power BI reaches the server.</value></data>
+  <data name="ReplacePassword.Content" xml:space="preserve"><value>Replace</value></data>
+  <data name="ClearIdentity.Content" xml:space="preserve"><value>Clear</value></data>
+  <data name="IdentityPassword.Header" xml:space="preserve"><value>Password</value></data>
+  <data name="IdentityPassword.PlaceholderText" xml:space="preserve"><value>Required to save this identity</value></data>
+  <data name="PasswordRequiredHelp.Text" xml:space="preserve"><value>Adding or changing the identity requires a password. Leave blank only to keep a saved one.</value></data>
+  <data name="KeepSavedPassword.Content" xml:space="preserve"><value>Keep saved password</value></data>
+  <data name="AboutVersion.[using:Microsoft.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve"><value>About version</value></data>
+  <data name="AboutVersion.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve"><value>Leave on default version unless this profile needs another. Launch will not fall back if this version is gone.</value></data>
+  <data name="AboutTray.[using:Microsoft.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve"><value>About show profile in system tray</value></data>
+  <data name="AboutTray.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve"><value>Off hides this profile from the tray. It remains on the board.</value></data>
+  <data name="AvatarColor.Text" xml:space="preserve"><value>Avatar color</value></data>
+  <data name="AvatarColorHelp.Text" xml:space="preserve"><value>Background color for the letter avatar.</value></data>
+  <data name="CardColor.Text" xml:space="preserve"><value>Card color</value></data>
+  <data name="CardColorHelp.Text" xml:space="preserve"><value>Accent tint on this profile’s board card.</value></data>
+  <data name="NoAccent.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve"><value>Reset card color</value></data>
+  <data name="NoAccent.[using:Microsoft.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve"><value>Reset card color</value></data>
+  <data name="PickColor.Text" xml:space="preserve"><value>Pick color</value></data>
+  <data name="PickAvatarColor.Text" xml:space="preserve"><value>Pick color</value></data>
+  <data name="ProfileFolder.Text" xml:space="preserve"><value>Profile folder</value></data>
+  <data name="ProfileFolderHelp.Text" xml:space="preserve"><value>Contains all files and settings for this profile.</value></data>
+  <data name="OpenFolder.Text" xml:space="preserve"><value>Open folder</value></data>
+  <data name="DangerZone.Text" xml:space="preserve"><value>Danger zone</value></data>
+  <data name="DeleteHelp.Text" xml:space="preserve"><value>Delete this profile permanently.</value></data>
+  <data name="DeleteCannotUndo.Text" xml:space="preserve"><value>This action cannot be undone.</value></data>
+  <data name="DeleteProfile.Text" xml:space="preserve"><value>Delete profile</value></data>
+
+  <!-- C# keys -->
+  <data name="PbiVersionKind_Desktop" xml:space="preserve"><value>Desktop</value></data>
+  <data name="PbiVersionKind_ReportServer" xml:space="preserve"><value>Report Server</value></data>
+  <data name="ProfileLaunchError_MissingFile" xml:space="preserve"><value>Could not start Power BI Desktop. The file is missing. Open settings and scan or browse for it.</value></data>
+  <data name="ProfileLaunchError_NotPowerBiDesktop" xml:space="preserve"><value>Could not start Power BI Desktop. That file is not Power BI Desktop.</value></data>
+  <data name="ProfileLaunchError_NoDefaultVersion" xml:space="preserve"><value>Could not start Power BI Desktop. No default version is registered. Open settings and scan or browse for it.</value></data>
+  <data name="ProfileLaunchError_DanglingVersion" xml:space="preserve"><value>Could not start Power BI Desktop. The selected version is no longer registered.</value></data>
+  <data name="ProfileLaunchError_MicrosoftStoreVersion" xml:space="preserve"><value>Could not start Power BI Desktop. The Microsoft Store version signs every profile in to the same account, so profiles cannot use it. Install the downloaded version of Power BI Desktop, then open settings and scan for it.</value></data>
+  <data name="ProfileLaunchError_PasswordUnavailable" xml:space="preserve"><value>The saved password is unavailable on this Windows account or device. Launch is blocked. The current Windows user is not used instead.</value></data>
+  <data name="ProfileLaunchError_ProcessStart" xml:space="preserve"><value>Could not start Power BI Desktop. Error: {0}. Please check settings.</value></data>
+  <data name="ProfileLaunchError_ProfileFolderMigration" xml:space="preserve"><value>Could not move this profile's folder to the new layout: {0}. Close any Power BI Desktop window opened from this profile and try again.</value></data>
+  <data name="ProfileLaunchError_ProfileFolderMigrationLeftovers" xml:space="preserve"><value>Could not move this profile's folder to the new layout: some files could not be moved out of the old profile folder. Close any Power BI Desktop window opened from this profile and try again.</value></data>
+  <data name="ProfileLaunchError_ProfileFolderUnavailable" xml:space="preserve"><value>Could not prepare this profile's folder: {0}. Check that the folder to store profiles is available, then try again.</value></data>
+  <data name="ProfileLaunchError_Generic" xml:space="preserve"><value>Could not start Power BI Desktop.</value></data>
+  <data name="PathBudget_LocalAppData" xml:space="preserve"><value>The profile folder path is too long for {0} ({1} characters; at most {2} fit). Power BI would open but could not create or load any model. Choose a shorter folder to store profiles in settings.</value></data>
+  <data name="PathBudget_ProfilesRoot" xml:space="preserve"><value>Folder to store profiles is too long for {0} ({1} characters; at most {2} fit). Power BI would open but could not create or load any model.</value></data>
+  <data name="SettingsIssue_FolderEmpty" xml:space="preserve"><value>Folder to store profiles cannot be empty.</value></data>
+  <data name="SettingsIssue_FolderMissing" xml:space="preserve"><value>Folder to store profiles does not exist on disk.</value></data>
+  <data name="SettingsIssue_FolderRelative" xml:space="preserve"><value>Enter a full folder path, starting with a drive letter or network share.</value></data>
+  <data name="SettingsIssue_FolderInvalidCharacters" xml:space="preserve"><value>That path contains characters Windows does not allow in a folder path.</value></data>
+  <data name="SettingsIssue_FolderTooLong_Desktop" xml:space="preserve"><value>Choose a shorter folder; Power BI Desktop cannot use paths longer than {0} characters under this root.</value></data>
+  <data name="SettingsIssue_FolderTooLong_ReportServer" xml:space="preserve"><value>Choose a shorter folder; Report Server cannot use paths longer than {0} characters under this root.</value></data>
+  <data name="ProfilesFolderOpenDisabledTooltip" xml:space="preserve"><value>This folder is created when you save settings.</value></data>
+  <data name="SettingsIssue_DefaultVersionRequired" xml:space="preserve"><value>A default version is required.</value></data>
+  <data name="SettingsIssue_VersionNotPowerBiDesktop" xml:space="preserve"><value>'{0}' is not Power BI Desktop.</value></data>
+  <data name="SettingsIssue_VersionFileMissing" xml:space="preserve"><value>The file for '{0}' is missing.</value></data>
+  <data name="SettingsIssue_SaveFailed" xml:space="preserve"><value>Could not save settings: {0}</value></data>
+  <data name="SettingsIssue_SaveBlocked" xml:space="preserve"><value>Could not save settings because settings.json could not be read when the launcher started. Restart the launcher, then try again.</value></data>
+  <data name="ProfileValidation_NameEmpty" xml:space="preserve"><value>Profile name cannot be empty.</value></data>
+  <data name="ProfileValidation_NameDuplicate" xml:space="preserve"><value>A profile with this name already exists.</value></data>
+  <data name="LogoValidation_PathEmpty" xml:space="preserve"><value>Logo path cannot be empty.</value></data>
+  <data name="LogoValidation_UnsupportedFormat" xml:space="preserve"><value>Unsupported logo format. Allowed formats: png, jpg, jpeg, ico, bmp.</value></data>
+  <data name="LogoValidation_UnsupportedFormatWithExtension" xml:space="preserve"><value>Unsupported logo format ({0}). Allowed formats: png, jpg, jpeg, ico, bmp.</value></data>
+  <data name="VersionRegistry_NotPowerBiDesktop" xml:space="preserve"><value>That file is not Power BI Desktop.</value></data>
+  <data name="VersionRegistry_FileMissing" xml:space="preserve"><value>That file is missing.</value></data>
+  <data name="VersionRegistry_NotRegistered" xml:space="preserve"><value>That version is not registered.</value></data>
+  <data name="VersionRegistry_NameEmpty" xml:space="preserve"><value>Version name cannot be empty.</value></data>
+  <data name="VersionRegistry_MicrosoftStoreVersion" xml:space="preserve"><value>The Microsoft Store version of Power BI Desktop is not supported. It signs every profile in to the same account. Install the downloaded version instead.</value></data>
+  <data name="IdentityPersist_IdentityEmpty" xml:space="preserve"><value>Windows network identity cannot be empty.</value></data>
+  <data name="IdentityPersist_PasswordRequired" xml:space="preserve"><value>A password is required to save this Windows network identity.</value></data>
+  <data name="CredentialStore_SaveFailed" xml:space="preserve"><value>Could not save the password. {0}</value></data>
+  <data name="CredentialStore_RemoveFailed" xml:space="preserve"><value>Could not remove the saved password. {0}</value></data>
+  <data name="VersionSelection_FollowDefault" xml:space="preserve"><value>Default version</value></data>
+  <data name="VersionSelection_FollowDefaultNamed" xml:space="preserve"><value>Default version - {0}</value></data>
+  <data name="VersionSelection_EmptyRegistry" xml:space="preserve"><value>No versions registered</value></data>
+  <data name="VersionSelection_Dangling" xml:space="preserve"><value>Missing version (removed from settings)</value></data>
+  <data name="TrayMenu_ShowWindow" xml:space="preserve"><value>Show window</value></data>
+  <data name="TrayMenu_HideWindow" xml:space="preserve"><value>Hide window</value></data>
+  <data name="TrayMenu_Exit" xml:space="preserve"><value>Exit</value></data>
+  <data name="ProfileCard_Launch" xml:space="preserve"><value>Launch {0}</value></data>
+  <data name="ProfileCard_Profile" xml:space="preserve"><value>Profile {0}</value></data>
+  <data name="ProfileCard_CaptionMissing" xml:space="preserve"><value>Missing version</value></data>
+  <data name="ProfileCard_Launching" xml:space="preserve"><value>Launching…</value></data>
+  <data name="ProfileCard_LaunchingAnnouncement" xml:space="preserve"><value>Launching {0}</value></data>
+  <data name="ProfileCard_WindowsNetworkIdentity" xml:space="preserve"><value>Windows network identity</value></data>
+  <data name="ProfileCard_MoreOptions" xml:space="preserve"><value>More options</value></data>
+  <data name="EmptyBoardTitle.Text" xml:space="preserve"><value>No profiles yet</value></data>
+  <data name="EmptyBoardDescription.Text" xml:space="preserve"><value>A profile is an isolated Power BI Desktop environment you can launch or edit.</value></data>
+  <data name="EmptyBoardAddProfile.Text" xml:space="preserve"><value>Add profile</value></data>
+  <data name="EmptyBoardAddButton.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve"><value>Add profile (Ctrl+N)</value></data>
+  <data name="ProfileCard_EditProfile" xml:space="preserve"><value>Edit profile</value></data>
+  <data name="ProfileCard_Reorder" xml:space="preserve"><value>Reorder</value></data>
+  <data name="ProfileCard_Delete" xml:space="preserve"><value>Delete</value></data>
+  <data name="LaunchOrder_Name" xml:space="preserve"><value>Launch order</value></data>
+  <data name="LaunchOrder_Help" xml:space="preserve"><value>Drag to change launch order. Right-click or Alt+Up/Down to move.</value></data>
+  <data name="LaunchOrder_MoveUp" xml:space="preserve"><value>Move up</value></data>
+  <data name="LaunchOrder_MoveDown" xml:space="preserve"><value>Move down</value></data>
+  <data name="Settings_Title" xml:space="preserve"><value>Settings</value></data>
+  <data name="Settings_WelcomeTitle" xml:space="preserve"><value>Welcome - configure settings</value></data>
+  <data name="EditProfile_ChangeIcon" xml:space="preserve"><value>Change icon</value></data>
+  <data name="EditProfile_UploadIcon" xml:space="preserve"><value>Upload icon</value></data>
+  <data name="EditProfile_NewPassword" xml:space="preserve"><value>New password</value></data>
+  <data name="EditProfile_Password" xml:space="preserve"><value>Password</value></data>
+  <data name="EditProfile_ReenterPassword" xml:space="preserve"><value>Re-enter the password to save it on this device.</value></data>
+  <data name="EditProfile_PasswordRequiredHelp" xml:space="preserve"><value>Adding or changing the identity requires a password. Leave blank only to keep a saved one.</value></data>
+  <data name="Board_Reorder" xml:space="preserve"><value>Reorder</value></data>
+  <data name="Board_Done" xml:space="preserve"><value>Done</value></data>
+  <data name="Board_DoneTooltip" xml:space="preserve"><value>Done (Esc)</value></data>
+  <data name="Board_ReorderModeOn" xml:space="preserve"><value>Reorder mode on</value></data>
+  <data name="Board_ReorderModeOff" xml:space="preserve"><value>Reorder mode off</value></data>
+  <data name="Toast_ReviewSettings" xml:space="preserve"><value>Review these settings, then save to continue.</value></data>
+  <data name="Toast_Saved" xml:space="preserve"><value>Saved</value></data>
+  <data name="Toast_Starting" xml:space="preserve"><value>Starting Power BI Desktop ({0})...</value></data>
+  <data name="Toast_OpenFolderFailed" xml:space="preserve"><value>Could not open folder: {0}</value></data>
+  <data name="Toast_NoProfileSelected" xml:space="preserve"><value>No profile selected.</value></data>
+  <data name="Toast_LogoCopyFailed" xml:space="preserve"><value>Error copying logo file: {0}</value></data>
+  <data name="Toast_LogoDeleteFailed" xml:space="preserve"><value>Could not delete logo file: {0}</value></data>
+  <data name="Toast_ProfilesSaveFailed" xml:space="preserve"><value>Could not save profiles: {0}</value></data>
+  <data name="Toast_ProfilesSaveBlocked" xml:space="preserve"><value>Could not save profiles because profiles.json could not be read when the launcher started. Restart the launcher, then try again.</value></data>
+  <data name="Toast_ProfilesSaveBlockedBySettings" xml:space="preserve"><value>Could not save profiles because settings.json could not be read when the launcher started, so the folder to store profiles is unknown. Restart the launcher, then try again.</value></data>
+  <data name="Toast_ProfileDeletedPasswordLeft" xml:space="preserve"><value>The profile was deleted, but its saved password could not be removed from Credential Manager. {0}</value></data>
+  <data name="Toast_PasswordNotRestored" xml:space="preserve"><value>The saved password in Credential Manager could not be put back, so it may not match this profile. Enter the password again in edit profile before launching.</value></data>
+  <data name="Toast_PasswordRemoved" xml:space="preserve"><value>The saved password in Credential Manager could not be put back, so it was removed. Enter the password again in edit profile before launching.</value></data>
+  <data name="Toast_UnexpectedError" xml:space="preserve"><value>Something went wrong: {0}</value></data>
+  <data name="LauncherVersion_Label" xml:space="preserve"><value>Launcher version {0}</value></data>
+  <data name="LauncherVersion_Unknown" xml:space="preserve"><value>Unknown</value></data>
+  <data name="LauncherVersion_Available" xml:space="preserve"><value>Launcher version {0} is available.</value></data>
+  <data name="LauncherVersion_UpToDate" xml:space="preserve"><value>You have the latest version.</value></data>
+  <data name="LauncherVersion_CheckFailed" xml:space="preserve"><value>Could not check for updates.</value></data>
+  <data name="LauncherVersion_CheckUnavailableTooltip" xml:space="preserve"><value>Update checks are unavailable for this build.</value></data>
+  <data name="LauncherBuildDate_Label" xml:space="preserve"><value>Built {0}</value></data>
+  <data name="CheckForUpdates" xml:space="preserve"><value>Check for updates</value></data>
+  <data name="Dialog_DiscardTitle" xml:space="preserve"><value>Discard changes?</value></data>
+  <data name="Dialog_DiscardBody" xml:space="preserve"><value>You have unsaved changes. Discard them and leave edit profile?</value></data>
+  <data name="Dialog_Discard" xml:space="preserve"><value>Discard</value></data>
+  <data name="Dialog_Stay" xml:space="preserve"><value>Stay</value></data>
+  <data name="Dialog_DeleteProfileTitle" xml:space="preserve"><value>Delete profile</value></data>
+  <data name="Dialog_DeleteProfileBody" xml:space="preserve"><value>Are you sure you want to delete the profile "{0}"?
+
+This will permanently delete all data stored for this profile and cannot be undone.</value></data>
+  <data name="Dialog_Delete" xml:space="preserve"><value>Delete</value></data>
+  <data name="Dialog_Cancel" xml:space="preserve"><value>Cancel</value></data>
+  <data name="Dialog_ErrorTitle" xml:space="preserve"><value>Error</value></data>
+  <data name="Dialog_ConfigUnreadable" xml:space="preserve"><value>{0} could not be read, so the launcher started without it. The file could not be set aside, so changes will not be saved over it. Move or fix the file, then restart the launcher.</value></data>
+  <data name="Dialog_ConfigUnavailable" xml:space="preserve"><value>{0} could not be opened, so the launcher started without it. Another program, such as antivirus or backup software, may be using it. The file was left as it is and changes will not be saved over it. Restart the launcher when the file is free.</value></data>
+  <data name="Dialog_ConfigUnreadableBackup" xml:space="preserve"><value>{0} could not be read, so the launcher started without it. The unreadable file was kept as {1}.</value></data>
+  <data name="Dialog_Ok" xml:space="preserve"><value>OK</value></data>
+  <data name="Dialog_OpenSettings" xml:space="preserve"><value>Open settings</value></data>
+  <data name="Dialog_EditProfile" xml:space="preserve"><value>Edit profile</value></data>
+  <data name="Dialog_SavedPasswordUnavailableTitle" xml:space="preserve"><value>Saved password unavailable</value></data>
+  <data name="Dialog_VersionMissingTitle" xml:space="preserve"><value>Version missing</value></data>
+  <data name="Dialog_PickCardColor" xml:space="preserve"><value>Pick card color</value></data>
+  <data name="Dialog_PickAvatarColor" xml:space="preserve"><value>Pick avatar color</value></data>
+  <data name="CardColor_System" xml:space="preserve"><value>System</value></data>
+</root>

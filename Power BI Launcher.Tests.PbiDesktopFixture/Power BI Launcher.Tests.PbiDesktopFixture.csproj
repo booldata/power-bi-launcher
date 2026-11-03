@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!--
+    Metadata-only stub: Product/Description contain "Power BI" so FileVersionInfoReader
+    and PbiExecutablePolicy treat a copy named PBIDesktop.exe as Desktop. Used by
+    FileVersionInfoReaderTests - not a real launcher.
+  -->
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Product>Microsoft Power BI Desktop</Product>
+    <Description>Power BI Desktop</Description>
+    <AssemblyTitle>Power BI Desktop</AssemblyTitle>
+    <AssemblyName>PbiDesktopVersionInfo</AssemblyName>
+    <RootNamespace>PowerBILauncher.Tests.PbiDesktopFixture</RootNamespace>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+</Project>

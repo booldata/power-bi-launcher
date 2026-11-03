@@ -1,0 +1,9 @@
+<Project>
+  <PropertyGroup>
+    <Version>0.0.0-local</Version>
+    <Platforms>x64</Platforms>
+    <Platform Condition="'$(Platform)' == '' or '$(Platform)' == 'AnyCPU'">x64</Platform>
+    <!-- GitHub's NuGet dependency submission restores on Linux. Windows TFMs refuse that unless this is set. -->
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+  </PropertyGroup>
+</Project>

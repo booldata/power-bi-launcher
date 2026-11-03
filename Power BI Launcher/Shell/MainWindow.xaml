@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window
+    x:Class="PowerBILauncher.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:PowerBILauncher"
+    Title="Power BI Launcher">
+
+    <!-- Chrome (nav) sits on Mica; body uses LayerFill for Fluent content-layer separation. -->
+    <Grid x:Name="RootGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Top pivot - nav on board; thin Back replaces nav while editing.
+             Left padding tracks AppWindow.TitleBar.LeftInset so Back clears the drag region. -->
+        <Grid
+            x:Name="ShellTopChrome"
+            Grid.Row="0"
+            Padding="{StaticResource ShellNavPadding}"
+            MinHeight="48"
+            SizeChanged="ShellTopChrome_SizeChanged">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Image
+                x:Name="AppIconImage"
+                Width="20"
+                Height="20"
+                Margin="0,0,12,0"
+                VerticalAlignment="Center"
+                Stretch="Uniform"
+                IsHitTestVisible="False"
+                AutomationProperties.AccessibilityView="Raw"/>
+            <Grid Grid.Column="1">
+                <NavigationView
+                    x:Name="ShellNav"
+                    PaneDisplayMode="Top"
+                    IsBackButtonVisible="Collapsed"
+                    IsSettingsVisible="False"
+                    SelectionChanged="ShellNav_SelectionChanged">
+                    <NavigationView.MenuItems>
+                        <NavigationViewItem
+                            x:Uid="NavPowerBi"
+                            Content="Power BI"
+                            Tag="profiles"
+                            AutomationProperties.AutomationId="NavProfiles"/>
+                        <NavigationViewItem
+                            x:Uid="NavSettings"
+                            Content="Settings"
+                            Tag="settings"
+                            AutomationProperties.AutomationId="NavSettings"/>
+                    </NavigationView.MenuItems>
+                </NavigationView>
+                <Grid x:Name="EditShellChrome" Visibility="Collapsed">
+                    <Button
+                        x:Name="ShellBackButton"
+                        x:Uid="ShellBack"
+                        Content="← Back"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Click="ShellBackButton_Click"
+                        AutomationProperties.AutomationId="BackFromEditButton"/>
+                </Grid>
+            </Grid>
+        </Grid>
+
+        <!-- Content layer above Mica -->
+        <Border
+            Grid.Row="1"
+            Background="{ThemeResource LayerFillColorDefaultBrush}"
+            BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}"
+            BorderThickness="0,1,0,0"
+            Padding="{StaticResource PagePadding}">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <InfoBar
+                    x:Name="UpdateAvailableInfoBar"
+                    x:Uid="UpdateAvailable"
+                    Grid.Row="0"
+                    Margin="0,0,32,12"
+                    IsOpen="False"
+                    IsClosable="True"
+                    Severity="Informational"
+                    Title="A newer launcher is available"
+                    AutomationProperties.LiveSetting="Polite"
+                    AutomationProperties.AutomationId="UpdateAvailableInfoBar">
+                    <InfoBar.ActionButton>
+                        <HyperlinkButton
+                            x:Name="ViewReleaseButton"
+                            x:Uid="ViewRelease"
+                            Content="View release"
+                            AutomationProperties.AutomationId="ViewReleaseButton"/>
+                    </InfoBar.ActionButton>
+                </InfoBar>
+
+                <!-- Power BI Profiles: chrome outside Frame; board ↔ Edit Profile inside -->
+                <Grid x:Name="ProfilesPanel" Grid.Row="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid Margin="0,0,32,24">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock
+                            x:Name="ProfilesPageTitle"
+                            x:Uid="ProfilesPageTitle"
+                            Text="Power BI"
+                            Style="{StaticResource TitleTextBlockStyle}"
+                            VerticalAlignment="Top"/>
+                        <StackPanel
+                            Grid.Column="1"
+                            Orientation="Horizontal"
+                            Spacing="8"
+                            VerticalAlignment="Top"
+                            Margin="12,0,0,0">
+                            <Button
+                                x:Name="AddProfileButton"
+                                x:Uid="AddProfileButton"
+                                Click="AddProfileButton_Click"
+                                AutomationProperties.AutomationId="AddProfileButton">
+                                <StackPanel Orientation="Horizontal" Spacing="8">
+                                    <FontIcon Glyph="&#xE710;" FontSize="16"/>
+                                    <TextBlock x:Uid="AddProfile" Text="Add profile"/>
+                                </StackPanel>
+                            </Button>
+                            <Border
+                                x:Name="ReorderModeBanner"
+                                x:Uid="ReorderModeBanner"
+                                Height="32"
+                                Padding="8,0,4,0"
+                                CornerRadius="{ThemeResource ControlCornerRadius}"
+                                BorderBrush="{ThemeResource AccentFillColorDefaultBrush}"
+                                BorderThickness="1"
+                                Background="{ThemeResource CardBackgroundFillColorDefaultBrush}"
+                                VerticalAlignment="Center"
+                                Visibility="Collapsed"
+                                AutomationProperties.AutomationId="ReorderModeBanner"
+                                AutomationProperties.LiveSetting="Assertive"
+                                AutomationProperties.Name="Reorder mode">
+                                <StackPanel Orientation="Horizontal" Spacing="8">
+                                    <TextBlock
+                                        x:Name="ReorderModeLabel"
+                                        x:Uid="ReorderModeLabel"
+                                        Text="Reorder mode"
+                                        Style="{StaticResource BodyStrongTextBlockStyle}"
+                                        VerticalAlignment="Center"
+                                        Margin="4,0,0,0"/>
+                                    <Button
+                                        x:Name="BoardDoneButton"
+                                        MinHeight="24"
+                                        Padding="8,0"
+                                        VerticalAlignment="Center"
+                                        Click="BoardEditToggleButton_Click"
+                                        AutomationProperties.AutomationId="BoardDoneButton"/>
+                                </StackPanel>
+                            </Border>
+                            <Button
+                                x:Name="BoardEditToggleButton"
+                                Click="BoardEditToggleButton_Click"
+                                AutomationProperties.AutomationId="BoardEditToggleButton"/>
+                        </StackPanel>
+                    </Grid>
+
+                    <Frame
+                        x:Name="ProfilesFrame"
+                        Grid.Row="1"
+                        HorizontalAlignment="Stretch"
+                        VerticalAlignment="Stretch"
+                        HorizontalContentAlignment="Stretch"
+                        VerticalContentAlignment="Stretch"
+                        IsNavigationStackEnabled="True"/>
+                </Grid>
+
+                <!-- Settings / onboarding -->
+                <local:SettingsPanel x:Name="SettingsPanel" Grid.Row="1" Visibility="Collapsed"/>
+
+                <TextBlock
+                    x:Name="MessageTextBlock"
+                    Grid.Row="2"
+                    Margin="0,12,32,0"
+                    Opacity="0.85"
+                    AutomationProperties.LiveSetting="Polite"/>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>

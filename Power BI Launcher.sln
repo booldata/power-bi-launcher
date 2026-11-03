@@ -1,0 +1,36 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35122.118
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Power BI Launcher", "Power BI Launcher\Power BI Launcher.csproj", "{38F14410-4EB4-4E7B-8A1E-E5C54354D010}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Power BI Launcher.Tests", "Power BI Launcher.Tests\Power BI Launcher.Tests.csproj", "{958A5618-4E1D-4002-95E2-6FAC4DD02BCE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Power BI Launcher.Tests.PbiDesktopFixture", "Power BI Launcher.Tests.PbiDesktopFixture\Power BI Launcher.Tests.PbiDesktopFixture.csproj", "{B7C1A2D4-8E5F-4A91-9C33-1F6A0B2E4D78}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{38F14410-4EB4-4E7B-8A1E-E5C54354D010}.Debug|x64.ActiveCfg = Debug|x64
+		{38F14410-4EB4-4E7B-8A1E-E5C54354D010}.Debug|x64.Build.0 = Debug|x64
+		{38F14410-4EB4-4E7B-8A1E-E5C54354D010}.Release|x64.ActiveCfg = Release|x64
+		{38F14410-4EB4-4E7B-8A1E-E5C54354D010}.Release|x64.Build.0 = Release|x64
+		{958A5618-4E1D-4002-95E2-6FAC4DD02BCE}.Debug|x64.ActiveCfg = Debug|x64
+		{958A5618-4E1D-4002-95E2-6FAC4DD02BCE}.Debug|x64.Build.0 = Debug|x64
+		{958A5618-4E1D-4002-95E2-6FAC4DD02BCE}.Release|x64.ActiveCfg = Release|x64
+		{958A5618-4E1D-4002-95E2-6FAC4DD02BCE}.Release|x64.Build.0 = Release|x64
+		{B7C1A2D4-8E5F-4A91-9C33-1F6A0B2E4D78}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{B7C1A2D4-8E5F-4A91-9C33-1F6A0B2E4D78}.Debug|x64.Build.0 = Debug|Any CPU
+		{B7C1A2D4-8E5F-4A91-9C33-1F6A0B2E4D78}.Release|x64.ActiveCfg = Release|Any CPU
+		{B7C1A2D4-8E5F-4A91-9C33-1F6A0B2E4D78}.Release|x64.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3AFA8B13-FCF0-4234-8F20-C1846E3FA63D}
+	EndGlobalSection
+EndGlobal
