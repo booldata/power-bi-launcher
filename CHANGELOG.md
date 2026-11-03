@@ -11,6 +11,10 @@ publishes the matching section body for the tag.
 
 ## [Unreleased]
 
+### Changed
+
+- The portable zip now bundles Windows App SDK 2.6 instead of 1.7.
+
 ## [1.0.0] - 2026-11-03
 
 ### Added
