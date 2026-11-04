@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Text.Json;
 
@@ -188,6 +189,76 @@ public class ProfileLifecycleTests : IDisposable
         Assert.True(deleted);
         Assert.Null(error);
         Assert.False(Directory.Exists(paths.Root));
+    }
+
+    [Fact]
+    public void TryDeleteProfileData_removes_folder_when_it_contains_a_content_ie5_junction()
+    {
+        string profilesRoot = Path.Combine(_baseDir, "Profiles");
+        Directory.CreateDirectory(profilesRoot);
+
+        var lifecycle = CreateLifecycle();
+        lifecycle.Load();
+        lifecycle.Settings.UserProfilePath = profilesRoot;
+
+        var profile = new Profile
+        {
+            Id = Guid.Parse("45454545-4545-4545-4545-454545454545"),
+            Name = "Junction",
+            Order = 1,
+            AvatarColor = "#4F6BED"
+        };
+        lifecycle.Profiles.Add(profile);
+        var paths = lifecycle.EnsureProfileDirectories(profile);
+
+        string cache = Path.Combine(
+            paths.LocalAppData, "Microsoft", "Windows", "INetCache");
+        string cacheTarget = Path.Combine(cache, "IE");
+        Directory.CreateDirectory(cacheTarget);
+        File.WriteAllText(Path.Combine(cacheTarget, "cache.bin"), "x");
+        string contentIe5 = Path.Combine(cache, "Content.IE5");
+        CreateJunction(contentIe5, cacheTarget);
+        File.SetAttributes(
+            contentIe5,
+            File.GetAttributes(contentIe5) | FileAttributes.Hidden | FileAttributes.System);
+        FileAttributes junctionAttributes = File.GetAttributes(contentIe5);
+        Assert.True(junctionAttributes.HasFlag(FileAttributes.ReparsePoint));
+        Assert.True(junctionAttributes.HasFlag(FileAttributes.Hidden));
+        Run("icacls.exe", $"\"{contentIe5}\" /L /deny Everyone:(RD)");
+
+        string outside = Path.Combine(_baseDir, "outside-sentinel");
+        Directory.CreateDirectory(outside);
+        string sentinel = Path.Combine(outside, "keep.txt");
+        File.WriteAllText(sentinel, "keep");
+        CreateJunction(Path.Combine(paths.Root, "OutsideLink"), outside);
+
+        bool deleted = lifecycle.TryDeleteProfileData(profile, out string? error);
+
+        Assert.True(deleted, error);
+        Assert.Null(error);
+        Assert.False(Directory.Exists(paths.Root));
+        Assert.True(File.Exists(sentinel));
+    }
+
+    private static void CreateJunction(string junction, string target) =>
+        Run("cmd.exe", $"/c mklink /J \"{junction}\" \"{target}\"");
+
+    private static void Run(string fileName, string arguments)
+    {
+        using Process process = Process.Start(new ProcessStartInfo
+        {
+            FileName = fileName,
+            Arguments = arguments,
+            UseShellExecute = false,
+            CreateNoWindow = true,
+            RedirectStandardError = true
+        })!;
+        process.WaitForExit();
+        string error = process.StandardError.ReadToEnd();
+        if (process.ExitCode != 0)
+        {
+            throw new InvalidOperationException(error);
+        }
     }
 
     [Fact]
