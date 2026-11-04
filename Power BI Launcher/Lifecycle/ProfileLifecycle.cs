@@ -658,15 +658,8 @@ namespace PowerBILauncher
 
             try
             {
-                if (Directory.Exists(paths.Root))
-                {
-                    Directory.Delete(paths.Root, recursive: true);
-                }
-
-                if (Directory.Exists(legacyPaths.Root))
-                {
-                    Directory.Delete(legacyPaths.Root, recursive: true);
-                }
+                ProfileDirectoryDelete.Delete(paths.Root);
+                ProfileDirectoryDelete.Delete(legacyPaths.Root);
 
                 error = null;
                 return true;

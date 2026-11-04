@@ -60,6 +60,7 @@ Power BI Launcher/
 │   ├── ProfileLaunchResult.cs     - Launch success / error kind + remediation (board + tray)
 │   ├── Profile.cs                 - Profile model (name, Avatar, order, card color, ShowOnTray, VersionId, WindowsNetworkIdentity)
 │   ├── ProfileCustomAvatarFiles.cs - UI-free custom Avatar copy/delete under Profile root
+│   ├── ProfileDirectoryDelete.cs  - Deletes a Profile folder without following junctions such as Content.IE5
 │   ├── ProfilePaths.cs            - Profile directory path bundle (short layout `<root>\<12-hex>\AppData\{Local,Roaming}`)
 │   ├── ProfileFolderMigration.cs  - Resumable move of `<root>\<guid>\AppData\…` folders to the short layout
 │   ├── PowerBiPathBudget.cs       - MAX_PATH budget PBIDesktop.exe (.NET Framework) imposes on LOCALAPPDATA

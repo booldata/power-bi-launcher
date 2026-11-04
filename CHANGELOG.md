@@ -11,9 +11,15 @@ publishes the matching section body for the tag.
 
 ## [Unreleased]
 
+## [1.0.1] - 2026-11-04
+
 ### Changed
 
 - The portable zip now bundles Windows App SDK 2.6 instead of 1.7.
+
+### Fixed
+
+- Deleting a Profile removes its Isolated Environment after Power BI Desktop has run in it. Windows leaves a hidden cache junction named Content.IE5 in that folder, and the delete used to stop with "Access to the path 'Content.IE5' is denied."
 
 ## [1.0.0] - 2026-11-03
 
@@ -34,5 +40,6 @@ publishes the matching section body for the tag.
 - Opening the launcher while it is already running shows the running window instead of starting a second launcher.
 - Profiles and settings are saved so that a crash or power loss cannot damage them. A file that cannot be read at startup is kept under a dated name and reported instead of being replaced.
 
-[unreleased]: https://github.com/booldata/power-bi-launcher/compare/v1.0.0...HEAD
+[unreleased]: https://github.com/booldata/power-bi-launcher/compare/v1.0.1...HEAD
+[1.0.1]: https://github.com/booldata/power-bi-launcher/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/booldata/power-bi-launcher/releases/tag/v1.0.0
